@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Login System</title>
+  <link rel="shortcut icon" href="image/smart login.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="smart">
+  <form id="registerForm">
+    <div class="container mx-auto my-5 text-center">
+      <div class="group m-auto w-75 p-5">
+        <h1 class="text-info mb-4">Smart Login System</h1>
+
+        <div>
+          <input class="form-control mb-4 text-white" type="text" id="nameInput" placeholder="Enter Your Name" />
+          <p id="validName" class="alert alert-danger d-none">
+            At Least Two Characters Name
+          </p>
+        </div>
+
+        <div>
+          <input class="form-control mb-4 text-white" type="email" id="emailInput" placeholder="Enter Your  Email" />
+          <p id="validEmail" class="alert alert-danger d-none">
+            Please Enter A Valid Email
+          </p>
+        </div>
+        <div>
+          <input class="form-control mb-4 text-white" type="password" id="passInput" placeholder="Ex : Password123@" />
+          <p id="validPass" class="alert alert-danger d-none">
+            -At Least 8 Characters <br />
+            -One UpperCase At Least <br />
+            -One Special Character At Least <br />
+            -One Number At Least
+          </p>
+        </div>
+
+        <p id="emailExist" class="alert alert-danger d-none">
+          Email Is Already Exist
+        </p>
+
+        <p id="successLogin" class="alert alert-success d-none">
+          Success You Can Login
+        </p>
+
+        <button class="btn btn-outline-info w-100">Sign Up</button>
+
+        <p class="text-white mt-3">
+          Don’t have an account?
+
+          <a class="text-white text-decoration-none"  href="index.html">Signin</a>
+        </p>
+      </div>
+    </div>
+  </form>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+
+</html>

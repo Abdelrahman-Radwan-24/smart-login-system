@@ -1,0 +1,16 @@
+.smart {
+  background-image: url(../image/image.gif);
+}
+
+.group {
+  background-color: #102c57;
+}
+
+input {
+  background-color: #24353f !important;
+}
+
+::placeholder {
+  color: #fff !important;
+}
+
