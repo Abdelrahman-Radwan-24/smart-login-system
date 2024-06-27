@@ -19,6 +19,7 @@ registerForm.addEventListener("submit", function (e) {
 
   if (chekValidAllInputs()) {
     addUsers();
+    clearInputs();
   }
 });
 
@@ -83,4 +84,10 @@ function chekValidAllInputs() {
   } else {
     return false;
   }
+}
+
+function clearInputs() {
+  nameInput.value = null;
+  emailInput.value = null;
+  passInput.value = null;
 }

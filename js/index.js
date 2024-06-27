@@ -13,6 +13,7 @@ if (localStorage.getItem("allUsers") != null) {
 loginForm.addEventListener("submit", function (e) {
   e.preventDefault();
   login();
+  clearInputs();
 });
 
 function login() {
@@ -24,7 +25,7 @@ function login() {
     alertSuccess.classList.replace("d-none", "d-block");
     alertLogin.classList.replace("d-block", "d-none");
     setTimeout(function () {
-      window.location= "./home.html";
+      window.location = "./home.html";
     }, 3000);
   } else {
     alertLogin.classList.replace("d-none", "d-block");
@@ -42,4 +43,10 @@ function isLoginValid(newLogin) {
       return true;
     }
   }
+}
+
+function clearInputs() {
+  nameInput.value = null;
+  emailInput.value = null;
+  passInput.value = null;
 }
