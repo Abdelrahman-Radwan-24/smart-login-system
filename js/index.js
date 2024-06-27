@@ -46,7 +46,6 @@ function isLoginValid(newLogin) {
 }
 
 function clearInputs() {
-  nameInput.value = null;
   emailInput.value = null;
   passInput.value = null;
 }
